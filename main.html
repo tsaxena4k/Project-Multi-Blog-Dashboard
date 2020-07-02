@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+       <link rel="stylesheet" type="text/css" href="css/style.css">
+       <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@531&display=swap" rel="stylesheet">
+
+      <title>Profile</title> 
+   </head> 
+  
+   <body> 
+      <div class="container-1" >
+          <button  href="javascript:void(0);" onclick="myFunction()" id="log"><span>Login</span></button>
+          <button  href="javascript:void(0);" onclick="yourFunction()" id="sign"><span>SignUp</span></button> 
+          <div class="login-card" id="login1">
+            <h1>Login</h1><br>
+            <form>
+                <input type="text" name="user" placeholder="Username">
+                <input type="password" name="pass" placeholder="Password">
+                <input type="submit" name="login" class="login login-submit" value="login">
+            </form>
+            <div class="text-center p-t-57 p-b-20">
+                <span class="txt1">
+                    or login with
+                </span>
+        	</div>
+            <div class="social-icons flex-c p-b-112">
+                <a href="#" class="login100-social-item">
+                    <img src="images/icons/icon-facebook.png" alt="FACEBOOK">
+                </a>
+
+                <a href="#" class="login100-social-item">
+                    <img src="images/icons/icon-google.png" alt="GOOGLE">
+                </a>
+            </div>
+            <div class="login-help">
+            <a href="#">Sign up</a>  | <a href="#">Forgot Password</a>
+            </div>
+          </div>
+          
+          <div class="login-card" id="Signup1">
+            <h1>Sign Up</h1><br>
+            <form>
+                <input type="text" name="user" placeholder="Username">
+                <input type="text" name="user" placeholder="E-mail">
+                <input type="password" name="pass" placeholder="Password">
+                <input type="password" name="pass" placeholder="Confirm Password">
+                <input type="submit" name="login" class="login login-submit" value="Sign Up">
+            </form>
+            <div class="login-help">
+                <span>Already a member? <a href="#"> Login here.</a></span>
+            </div>
+          </div>
+          
+      </div>
+       
+       
+       
+       
+       
+       <script>
+        function myFunction() {
+        var x = document.getElementById("login1");
+        var y = document.getElementById("log");
+        var z = document.getElementById("sign");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+         x.style.display = "block";
+         y.style.display = "none";
+         z.style.display = "none";    
+        }
+       }
+        function yourFunction() {
+        var x = document.getElementById("Signup1");
+        var y = document.getElementById("log");
+        var z = document.getElementById("sign");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+         x.style.display = "block";
+         y.style.display = "none";
+         z.style.display = "none";    
+        }
+       }   
+       </script>
+   </body> 
+</html> 
